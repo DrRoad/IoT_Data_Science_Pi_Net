@@ -10,7 +10,7 @@ head(diamonds)
 head(demoFreq)
 
 # Display a plot on Pi #1
-png('C:/users/jmiller/Desktop/piR/data/plot0.png')
+png('C:/users/user/Desktop/piR/data/plot0.png')
 ggplot(diamonds, aes(x = price, y = cut, fill = cut)) +
   geom_density_ridges() +
   theme_ridges() + 
@@ -21,7 +21,7 @@ dev.off()
 #print(msg)
 
 # Display a plot on Pi #2
-png('C:/users/jmiller/Desktop/piR/data/plot1.png')
+png('C:/users/user/Desktop/piR/data/plot1.png')
 wordcloud2(demoFreq, size = 0.7, shape = 'star')
 dev.off()
 
