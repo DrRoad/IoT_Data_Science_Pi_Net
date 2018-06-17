@@ -17,13 +17,13 @@ ggplot(diamonds, aes(x = price, y = cut, fill = cut)) +
   theme(legend.position = "none")
 dev.off()
 
-#msg <- system("WinSCP.com /script = '..//code//win_scp_pi_push0'", intern=T)
-#print(msg)
+msg <- system("WinSCP.com /script=..//code//win_scp_pi_push0", intern=T)
+print(msg)
 
 # Display a plot on Pi #2
 png('C:/users/user/Desktop/piR/data/plot1.png')
 wordcloud2(demoFreq, size = 0.7, shape = 'star')
 dev.off()
 
-#msg <- system("WinSCP.com //script = '..//code//win_scp_pi_push1'", intern=T)
-#print(msg)
+msg <- system("WinSCP.com /script=..//code//win_scp_pi_push1", intern=T)
+print(msg)
