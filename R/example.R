@@ -10,7 +10,7 @@ head(diamonds)
 head(demoFreq)
 
 # Display a plot on Pi #1
-png('C:/users/user/Desktop/piR/data/plot0.png')
+png('C:/users/user/Desktop/piR/data/plot0.png', width=800,height=600) # for SVGA 4:3 ratio moniors
 ggplot(diamonds, aes(x = price, y = cut, fill = cut)) +
   geom_density_ridges() +
   theme_ridges() + 
